@@ -1,0 +1,37 @@
+:root {
+    --bgcolor: #fcfcfa;
+	--lightgray: #ededed;
+	--dark-purple: #903775;
+	--pink: #E8458B;
+}
+
+body {
+	background: linear-gradient(-45deg, #363553, #903775, #E8458B, #e69838);
+	background-size: 400% 400%;
+	animation: gradient 10s ease infinite;
+	height: 100vh;
+}
+
+.background-gray {
+    background-color: var(--bgcolor);
+}
+
+.light-gray {
+	background-color: var(--lightgray);
+}
+
+.featureIcon {
+	background-color: var(--dark-purple);
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
